@@ -1,55 +1,44 @@
+# Java Swing History Quiz
 
-# Historia Quiz
+## Overview
 
-Jest to aplikacja quizowa z zakresu historii, zaprojektowana do testowania wiedzy użytkowników na temat wydarzeń historycznych, postaci i ciekawostek. Aplikacja prezentuje pytania jednokrotnego wyboru i zapewnia informacje zwrotne na temat odpowiedzi użytkownika.
+This project is a desktop history quiz application developed using Java's Swing and AWT libraries. It features a custom-designed graphical user interface (GUI) to test users' knowledge of historical events, figures, and facts. The application displays a list of questions, reveals question content upon selection, and provides a detailed statistics panel to track user performance and ranking.
 
+The project showcases skills in Java GUI development, custom component design, and unit testing with JUnit.
 
+---
 
+## Features
 
-## Funkcjonalności
+* **Custom UI Components**: The application features a unique visual style with custom-painted buttons and panels for an engaging user experience.
+* **Interactive Question List**: Displays a scrollable list of available quiz questions, categorized by topic and difficulty.
+* **Question Display**: Clicking a question button opens a dialog showing the full text of the question.
+* **Comprehensive Statistics Panel**:
+    * Tracks the number of correctly and incorrectly answered questions.
+    * Calculates the percentage of correct answers.
+    * Measures the average time taken to solve a question.
+    * Displays the user's overall ranking.
+* **Unit Testing**: The project includes a suite of unit tests written with JUnit 5 to ensure the reliability of core functionalities, such as UI component creation and data handling.
 
-- Wyświetlanie listy pytań
-- Wyświetlenie treści pytania po wybraniu go z listy
-- Wyświetlanie statystyk użytkownika oraz jego miejsca w rankingu
+---
 
+## Technology Stack
 
-## Pobieranie
-Tu pobrać można plik **JAR**, służący do uruchomienia aplikacji.
+* **Language**: Java (version 17)
+* **GUI Libraries**: Java Swing, AWT
+* **Testing**: JUnit 5
 
-[Download](https://drive.google.com/file/d/1Rt_vpveZxEOyrN1amq20GyqNzCznX__t/view?usp=sharing)
+---
 
-Wystarczy uruchomić plik aby aplikacja się otworzyła.
+## How to Run
 
+### Prerequisites
 
-## Struktura kodu programu
+* Java Runtime Environment (JRE) 17 or higher.
 
+### Execution
 
+The application is distributed as an executable **`.jar`** file. To run it, you can either double-click the `HistoriaQUIZ.jar` file or execute it from the command line:
 
-```
-└── HistoraQuiztest/
-    ├── HistoriaQuiz.jar            # Plik wykonywalny
-    └── src
-        ├── ButtonTypeA.java        # Statystyki użytkownika
-        ├── ButtonTypeB.java        # Miejsce w rankingu
-        ├── ButtonTypeC.java        # Przycisk do statystyk oraz powrotu
-        ├── GUI.java                # Całokształt interfejsu graficznego
-        ├── Main.java               # Main
-        ├── MyButton.java           # Przycisk odpowiadający za pytania
-        ├── MyPanel.java            # Wyświetlanie panelu ucznia
-        ├── addPanelTest.java       # Testy jednostkowe dodawania przyciku do panelu
-        ├── getPytanieTest.java     # Testy jednostkowe dodawania pytań
-        ├── funkcje_obliczające_statystyki.java     # Funkcje do statystyk
-        └── testy_funkcji_statystyki.java           # Testy jednostkowe funkcji do statystyk
-```
-## Biblioteki oraz Wersje
-* Swing
-* JUnit (wersja 5.8.1)
-* AWT
-
-Kod był w całości napisany w **IntelliJ IDEA 2024.1.1** i jest oparty na **Java 17 (17.0.8)**
-## Authors
-
-- Kurzydłowski Maciej
-- Domański Jan
-- Koziara Kacper
-
+```bash
+java -jar HistoriaQUIZ.jar
